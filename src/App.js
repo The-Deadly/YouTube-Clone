@@ -22,7 +22,7 @@ class App extends Component {
         const response = await youtube.get('search',{params: {
             part: 'snippet',
             maxResults: 5,
-            key: 'AIzaSyDBrdVvnswiZp45n7UM7n3anZ3k5AU2CiI',
+            key: 'API-Key',
             q: searchTerm
         }});
         const videos = response.data.items;
